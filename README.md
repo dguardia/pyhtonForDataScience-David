@@ -21,4 +21,4 @@ files for course:  look in
 It need to call the service by name: in our case this_jupyter - this_mongo 
 
 - `docker-compose exec dsnotebook bash`
-- `docker-compose exec this_mongo mongod`
+- `docker-compose exec dsmongo mongod`

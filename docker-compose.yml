@@ -1,0 +1,48 @@
+version: "3"
+
+services:
+  
+  this_jupyter:
+    build:
+      context: ./jupyter
+    container_name: dsnotebook
+    ports:
+      - "8888:8888"
+    networks:
+      data-science:
+    volumes:
+      - "./notebooks:/notebooks" 
+      - "db-data:/data/db"
+    env_file:
+      - "./config/jupyter.env"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+  
+  this_mongo:
+    image: mongo
+    container_name: dsmongo
+    ports:
+      - "27017:27017"
+    restart: always
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - "db-data:/data/db"
+    networks:
+      data-science:
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+
+volumes:
+  db-data:
+
+networks:
+  data-science:
+
+  

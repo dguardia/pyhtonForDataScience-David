@@ -1,0 +1,14 @@
+.git
+.ipynb_checkpoints
+data
+notebooks/ptyhonVideoForBigDataFiles/.ipynb_checkpoints
+notebooks/ptyhonVideoForBigDataFiles/alexFiles/.ipynb_checkpoints
+notebooks/ptyhonVideoForBigDataFiles/alexFiles/__pycache__
+.gitignore
+README.md
+env.*
+devops
+
+# To prevent storing dev/temporary container data
+*.csv
+tmp

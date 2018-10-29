@@ -5,9 +5,6 @@
 
 https://www.safaribooksonline.com/videos/working-with-big/9781788839068
 
-username: alexpiccolO
-password: Learning4u!
-
 files for course:  look in
 
     /pythonForBigDataFiles/notebooks/V09804_Code/

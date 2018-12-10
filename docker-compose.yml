@@ -11,7 +11,8 @@ services:
     networks:
       data-science:
     volumes:
-      - "./notebooks:/notebooks" 
+      - "./notebooks:/notebooks"
+      - "./notebooks/dataframes:/notebooks/dataframes"
       - "db-data:/data/db"
     env_file:
       - "./config/jupyter.env"

@@ -5,9 +5,6 @@
 
 https://www.safaribooksonline.com/videos/working-with-big/9781788839068
 
-username: alexpiccolO
-password: Learning4u!
-
 files for course:  look in
 
     /pythonForBigDataFiles/notebooks/V09804_Code/
@@ -20,5 +17,5 @@ files for course:  look in
 
 It need to call the service by name: in our case this_jupyter - this_mongo 
 
-- `docker-compose exec this_jupyter bash`
-- `docker-compose exec this_mongo mongod`
+- `docker-compose exec dsnotebook bash`
+- `docker-compose exec dsmongo mongod`
